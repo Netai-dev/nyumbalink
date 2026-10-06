@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My properties — NyumbaLink Landlord</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="dash-layout">
+ <aside class="sidebar">
+  <a class="logo" href="../index.html"><img class="site-logo" src="../assets/images/nyumbalink-logo-horizontal.svg" alt="NyumbaLink"></a>
+  <nav aria-label="Landlord navigation"><ul>
+   <li><a href="dashboard.html">Dashboard</a></li>
+   <li><a href="properties.html" aria-current="page">My properties</a></li>
+   <li><a href="add-property.html">Add property</a></li>
+   <li><a href="leads.html">Viewing requests</a></li>
+   <li><a href="leads.html">Leads</a></li>
+   <li><a href="verification.html">Verification</a></li>
+   <li><a href="dashboard.html">Profile</a></li>
+   <li><a href="../login.html">Sign out</a></li>
+  </ul></nav>
+ </aside>
+ <main class="dash-main">
+  <header class="dash-header"><h1>My properties</h1><a class="btn btn-primary" href="add-property.html">Add property</a></header>
+  <div class="table-wrap"><table class="data-table" id="properties-table">
+   <thead><tr><th>Property</th><th>Location</th><th>Rent</th><th>Status</th><th>Availability</th><th>Verification</th><th>Views</th><th>Leads</th><th>Actions</th></tr></thead>
+   <tbody>
+     <tr><td><strong>Tudor Student Residences</strong></td><td>Tudor</td><td>KSh 5,000</td><td><span class="pill pill-green">Active</span></td><td>Available now</td><td><span class="pill pill-green">Verified</span></td><td>342</td><td>6</td><td><div class="row-actions"><a class="btn btn-secondary btn-sm" href="../property.html">View</a><a class="btn btn-secondary btn-sm" href="add-property.html">Edit</a><button class="btn btn-secondary btn-sm" type="button">Update availability</button></div></td></tr>
+     <tr><td><strong>Nyali Bedsitters</strong></td><td>Nyali</td><td>KSh 10,000</td><td><span class="pill pill-green">Active</span></td><td>Available now</td><td><span class="pill pill-green">Verified</span></td><td>518</td><td>9</td><td><div class="row-actions"><a class="btn btn-secondary btn-sm" href="../property.html">View</a><a class="btn btn-secondary btn-sm" href="add-property.html">Edit</a><button class="btn btn-secondary btn-sm" type="button">Update availability</button></div></td></tr>
+     <tr><td><strong>Changamwe Student Hostel</strong></td><td>Changamwe</td><td>KSh 4,200</td><td><span class="pill pill-amber">Active</span></td><td>Needs confirmation</td><td><span class="pill pill-amber">Pending</span></td><td>97</td><td>2</td><td><div class="row-actions"><a class="btn btn-secondary btn-sm" href="../property.html">View</a><a class="btn btn-secondary btn-sm" href="add-property.html">Edit</a><button class="btn btn-secondary btn-sm" type="button">Update availability</button></div></td></tr>
+     <tr><td><strong>Likoni Heights</strong></td><td>Likoni</td><td>KSh 6,500</td><td><span class="pill pill">Unavailable</span></td><td>Occupied</td><td><span class="pill pill-red">Needs changes</span></td><td>160</td><td>4</td><td><div class="row-actions"><a class="btn btn-secondary btn-sm" href="../property.html">View</a><a class="btn btn-secondary btn-sm" href="add-property.html">Edit</a><button class="btn btn-secondary btn-sm" type="button">Update availability</button></div></td></tr>
+   </tbody></table></div>
+  <div class="empty-state" id="no-properties" hidden><div class="icon-placeholder">ICON</div><h2>No properties yet</h2><p>Add your first property to start receiving leads.</p><a class="btn btn-primary" href="add-property.html">Add property</a></div>
+ </main>
+</div>
+<script defer src="../js/properties.js"></script>
+<script defer src="../js/landlord.js"></script>
+</body>
+</html>

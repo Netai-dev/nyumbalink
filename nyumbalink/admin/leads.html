@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leads — NyumbaLink Admin</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="admin">
+<div class="dash-layout">
+ <aside class="sidebar">
+  <a class="logo" href="../index.html"><img class="site-logo" src="../assets/images/nyumbalink-logo-horizontal.svg" alt="NyumbaLink"></a>
+  <nav aria-label="Admin navigation"><ul>
+   <li><a href="dashboard.html">Dashboard</a></li>
+   <li><a href="properties.html">Properties</a></li>
+   <li><a href="landlords.html">Landlords</a></li>
+   <li><a href="tenants.html">Tenants</a></li>
+   <li><a href="leads.html" aria-current="page">Leads</a></li>
+   <li><a href="verification.html">Verification</a></li>
+   <li><a href="#">Complaints</a></li>
+   <li><a href="#">Successful move-ins</a></li>
+   <li><a href="#">Referral fees</a></li>
+  </ul></nav>
+ </aside>
+ <main class="dash-main">
+  <div class="admin-toolbar"><input type="search" aria-label="Search" placeholder="Search"><select aria-label="Filter"><option>All</option></select></div>
+  <div class="table-wrap"><table class="data-table" id="leads-table"><thead><tr>
+<th>Lead ID</th>
+<th>Tenant</th>
+<th>Property</th>
+<th>Landlord</th>
+<th>Created</th>
+<th>Viewing status</th>
+<th>Outcome</th>
+<th>Move-in status</th>
+<th>Referral status</th>
+</tr></thead><tbody>
+<tr><td>NL-000183</td><td>Amina Wanjiru</td><td>Tudor Student Residences</td><td>Joseph K.</td><td>5 Oct 2026</td><td>Requested</td><td>Pending</td><td>Not moved in</td><td>Not due</td></tr>
+<tr><td>NL-000179</td><td>Brian Otieno</td><td>Nyali Bedsitters</td><td>Mary N.</td><td>3 Oct 2026</td><td>Confirmed</td><td>Pending</td><td>Not moved in</td><td>Not due</td></tr>
+<tr><td>NL-000160</td><td>Kevin Mwangi</td><td>Likoni Heights</td><td>Joseph K.</td><td>25 Sep 2026</td><td>Viewed</td><td>Chose property</td><td>Moved in</td><td><span class="pill pill-amber">Awaiting payment</span></td></tr>
+</tbody></table></div>
+ </main>
+</div>
+<script defer src="../js/properties.js"></script>
+<script defer src="../js/admin.js"></script>
+</body>
+</html>

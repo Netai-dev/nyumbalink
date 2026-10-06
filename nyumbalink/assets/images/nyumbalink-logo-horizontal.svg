@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 96" role="img" aria-labelledby="title desc">
+  <title id="title">NyumbaLink</title>
+  <desc id="desc">NyumbaLink house and link logo</desc>
+  <g transform="translate(6 10)">
+    <path d="M10 39 42 12l32 27v31H52V52H32v18H10Z" fill="none" stroke="#31D6A0" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M38 39h8v12h-8z" fill="#F8FAFC"/>
+    <circle cx="42" cy="39" r="5" fill="#31D6A0"/>
+    <path d="M74 30c7-7 18-7 25 0l7 7-7 7-7-7c-3-3-8-3-11 0l-4 4-7-7 4-4Z" fill="#4C8DFF"/>
+  </g>
+  <text x="108" y="64" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="50" font-weight="800" letter-spacing="-2">
+    <tspan fill="#F8FAFC">Nyumba</tspan><tspan fill="#31D6A0">Link</tspan>
+  </text>
+</svg>

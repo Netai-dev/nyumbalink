@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tenants — NyumbaLink Admin</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="admin">
+<div class="dash-layout">
+ <aside class="sidebar">
+  <a class="logo" href="../index.html"><img class="site-logo" src="../assets/images/nyumbalink-logo-horizontal.svg" alt="NyumbaLink"></a>
+  <nav aria-label="Admin navigation"><ul>
+   <li><a href="dashboard.html">Dashboard</a></li>
+   <li><a href="properties.html">Properties</a></li>
+   <li><a href="landlords.html">Landlords</a></li>
+   <li><a href="tenants.html" aria-current="page">Tenants</a></li>
+   <li><a href="leads.html">Leads</a></li>
+   <li><a href="verification.html">Verification</a></li>
+   <li><a href="#">Complaints</a></li>
+   <li><a href="#">Successful move-ins</a></li>
+   <li><a href="#">Referral fees</a></li>
+  </ul></nav>
+ </aside>
+ <main class="dash-main">
+  <div class="admin-toolbar"><input type="search" aria-label="Search" placeholder="Search"><select aria-label="Filter"><option>All</option></select></div>
+  <div class="table-wrap"><table class="data-table" id="tenants-table"><thead><tr>
+<th>Tenant</th>
+<th>Phone</th>
+<th>Email</th>
+<th>Viewing requests</th>
+<th>Properties viewed</th>
+<th>Successful move-in</th>
+<th>Status</th>
+</tr></thead><tbody>
+<tr><td>Amina Wanjiru</td><td>0700 000 010</td><td>amina@example.com</td><td>3</td><td>2</td><td>No</td><td><span class="pill pill-green">Active</span></td></tr>
+<tr><td>Brian Otieno</td><td>0700 000 011</td><td>brian@example.com</td><td>2</td><td>2</td><td>Yes</td><td><span class="pill pill-green">Active</span></td></tr>
+<tr><td>Fatma Hassan</td><td>0700 000 012</td><td>fatma@example.com</td><td>1</td><td>1</td><td>No</td><td><span class="pill">Inactive</span></td></tr>
+</tbody></table></div>
+ </main>
+</div>
+<script defer src="../js/properties.js"></script>
+<script defer src="../js/admin.js"></script>
+</body>
+</html>

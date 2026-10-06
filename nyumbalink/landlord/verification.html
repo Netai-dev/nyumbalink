@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verification — NyumbaLink Landlord</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="dash-layout">
+ <aside class="sidebar">
+  <a class="logo" href="../index.html"><img class="site-logo" src="../assets/images/nyumbalink-logo-horizontal.svg" alt="NyumbaLink"></a>
+  <nav aria-label="Landlord navigation"><ul>
+   <li><a href="dashboard.html">Dashboard</a></li>
+   <li><a href="properties.html">My properties</a></li>
+   <li><a href="add-property.html">Add property</a></li>
+   <li><a href="leads.html">Viewing requests</a></li>
+   <li><a href="leads.html">Leads</a></li>
+   <li><a href="verification.html" aria-current="page">Verification</a></li>
+   <li><a href="dashboard.html">Profile</a></li>
+   <li><a href="../login.html">Sign out</a></li>
+  </ul></nav>
+ </aside>
+ <main class="dash-main">
+  <header class="dash-header"><h1>Verification</h1></header>
+  <div class="dash-panels">
+   <section id="verification-status" aria-label="Verification status" class="queue">
+   <article class="panel"><div class="checklist-item"><strong>Tudor Student Residences</strong><span class="pill pill-green">Verified</span></div><p>Submitted: 1 Oct 2026</p><p>All checks completed.</p></article>
+   <article class="panel"><div class="checklist-item"><strong>Changamwe Student Hostel</strong><span class="pill pill-amber">Pending verification</span></div><p>Submitted: 3 Oct 2026</p><p>Pending: photos, caretaker ID.</p></article>
+   <article class="panel"><div class="checklist-item"><strong>Likoni Heights</strong><span class="pill pill-red">Needs changes</span></div><p>Submitted: 28 Sep 2026</p><p>Please add a clearer rent confirmation.</p></article>
+   <article class="panel"><div class="checklist-item"><strong>Mtwapa Palm Rooms</strong><span class="pill pill">Rejected</span></div><p>Submitted: 20 Sep 2026</p><p>Location could not be confirmed.</p></article>
+   </section>
+   <aside>
+    <section class="panel" id="verification-checklist"><h2>Verification checklist</h2>
+     <ul>
+      <li class="checklist-item">Property physically checked <span>✓</span></li>
+      <li class="checklist-item">Landlord/caretaker identity confirmed <span>✓</span></li>
+      <li class="checklist-item">Rent confirmed <span>✓</span></li>
+      <li class="checklist-item">Deposit confirmed <span>✓</span></li>
+      <li class="checklist-item">Amenities checked <span>✓</span></li>
+      <li class="checklist-item">Location confirmed <span>✓</span></li>
+      <li class="checklist-item">Photos/video captured <span>○</span></li>
+      <li class="checklist-item">Availability confirmed <span>○</span></li>
+     </ul></section>
+    <section class="panel" id="verification-instructions"><h2>Instructions</h2>
+     <p>Have your ID, rent details and a caretaker contact ready. A NyumbaLink agent will arrange a visit.</p></section>
+   </aside>
+  </div>
+  <div class="empty-state" id="no-verification" hidden><div class="icon-placeholder">ICON</div><h2>No verification requests</h2><p>Submit a property to begin verification.</p><a class="btn btn-primary" href="add-property.html">Add property</a></div>
+ </main>
+</div>
+<script defer src="../js/properties.js"></script>
+<script defer src="../js/landlord.js"></script>
+</body>
+</html>

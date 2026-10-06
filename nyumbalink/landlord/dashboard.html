@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard — NyumbaLink Landlord</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="dash-layout">
+ <aside class="sidebar">
+  <a class="logo" href="../index.html"><img class="site-logo" src="../assets/images/nyumbalink-logo-horizontal.svg" alt="NyumbaLink"></a>
+  <nav aria-label="Landlord navigation"><ul>
+   <li><a href="dashboard.html" aria-current="page">Dashboard</a></li>
+   <li><a href="properties.html">My properties</a></li>
+   <li><a href="add-property.html">Add property</a></li>
+   <li><a href="leads.html">Viewing requests</a></li>
+   <li><a href="leads.html">Leads</a></li>
+   <li><a href="verification.html">Verification</a></li>
+   <li><a href="dashboard.html">Profile</a></li>
+   <li><a href="../login.html">Sign out</a></li>
+  </ul></nav>
+ </aside>
+ <main class="dash-main">
+  <header class="dash-header"><h1>Welcome back, Joseph</h1><a class="btn btn-primary" href="add-property.html">Add property</a></header>
+  <section class="stats-grid" id="stats" aria-label="Stats">
+   <article class="stat-card"><span class="stat-value">12</span><span class="stat-label">Active properties</span></article>   <article class="stat-card"><span class="stat-value">8</span><span class="stat-label">Viewing requests</span></article>   <article class="stat-card"><span class="stat-value">5</span><span class="stat-label">Active leads</span></article>   <article class="stat-card"><span class="stat-value">3</span><span class="stat-label">Successful move-ins</span></article>
+  </section>
+  <div class="dash-panels">
+   <section class="panel" id="recent-activity"><h2>Recent activity</h2>
+    <ul class="activity-list">
+     <li><span class="pill pill-blue">New</span> Viewing requested for Tudor Student Residences — 2 hours ago</li>
+     <li><span class="pill pill-green">Verified</span> Nyali Bedsitters passed verification — yesterday</li>
+     <li><span class="pill pill-blue">Lead</span> Amina W. is considering Bamburi Court — 2 days ago</li>
+     <li><span class="pill pill-green">Move-in</span> Brian O. moved in at Likoni Heights — last week</li>
+    </ul></section>
+   <div>
+    <section class="panel" id="needs-attention"><h2>Properties needing attention</h2>
+     <ul class="activity-list">
+      <li><span class="pill pill-amber">Confirm</span> Changamwe Student Hostel — availability needs confirming</li>
+      <li><span class="pill pill-red">Changes</span> Kisauni Family Home — add kitchen photo</li>
+     </ul></section>
+    <section class="panel" id="notifications"><h2>Notifications</h2>
+  <div class="empty-state" id="no-notifications"><div class="icon-placeholder">ICON</div><h2>No notifications</h2><p>You're all caught up.</p><a class="btn btn-primary" href="properties.html">View properties</a></div>
+    </section>
+   </div>
+  </div>
+ </main>
+</div>
+<script defer src="../js/properties.js"></script>
+<script defer src="../js/landlord.js"></script>
+</body>
+</html>

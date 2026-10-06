@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leads — NyumbaLink Landlord</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="dash-layout">
+ <aside class="sidebar">
+  <a class="logo" href="../index.html"><img class="site-logo" src="../assets/images/nyumbalink-logo-horizontal.svg" alt="NyumbaLink"></a>
+  <nav aria-label="Landlord navigation"><ul>
+   <li><a href="dashboard.html">Dashboard</a></li>
+   <li><a href="properties.html">My properties</a></li>
+   <li><a href="add-property.html">Add property</a></li>
+   <li><a href="leads.html">Viewing requests</a></li>
+   <li><a href="leads.html" aria-current="page">Leads</a></li>
+   <li><a href="verification.html">Verification</a></li>
+   <li><a href="dashboard.html">Profile</a></li>
+   <li><a href="../login.html">Sign out</a></li>
+  </ul></nav>
+ </aside>
+ <main class="dash-main">
+  <header class="dash-header"><h1>Your leads</h1></header>
+  <div class="table-wrap" id="viewing-requests"><table class="data-table" id="leads-table">
+   <thead><tr><th>Lead ID</th><th>Tenant name</th><th>Property</th><th>Viewing date</th><th>Viewing status</th><th>Lead status</th><th>Date created</th></tr></thead>
+   <tbody>
+     <tr><td>NL-000183</td><td>Amina Wanjiru</td><td>Tudor Student Residences</td><td>8 Oct 2026</td><td><span class="pill pill-blue">Viewing requested</span></td><td><span class="pill pill-blue">New</span></td><td>5 Oct 2026</td></tr>
+     <tr><td>NL-000179</td><td>Brian Otieno</td><td>Nyali Bedsitters</td><td>6 Oct 2026</td><td><span class="pill pill-blue">Viewing confirmed</span></td><td><span class="pill pill-green">Viewing confirmed</span></td><td>3 Oct 2026</td></tr>
+     <tr><td>NL-000171</td><td>Fatma Hassan</td><td>Bamburi Court Apartments</td><td>2 Oct 2026</td><td><span class="pill pill-blue">Viewed</span></td><td><span class="pill pill-amber">Considering</span></td><td>30 Sep 2026</td></tr>
+     <tr><td>NL-000160</td><td>Kevin Mwangi</td><td>Likoni Heights</td><td>28 Sep 2026</td><td><span class="pill pill-blue">Viewed</span></td><td><span class="pill pill-green">Moved in</span></td><td>25 Sep 2026</td></tr>
+     <tr><td>NL-000152</td><td>Grace Achieng</td><td>Changamwe Student Hostel</td><td>—</td><td><span class="pill pill-blue">—</span></td><td><span class="pill pill">Not interested</span></td><td>20 Sep 2026</td></tr>
+   </tbody></table></div>
+  <p class="notice">Lead statuses: New · Viewing requested · Viewing confirmed · Viewed · Considering · Moved in · Not interested</p>
+  <div class="empty-state" id="no-leads" hidden><div class="icon-placeholder">ICON</div><h2>No leads yet</h2><p>Leads appear when tenants request viewings.</p><a class="btn btn-primary" href="properties.html">View my properties</a></div>
+  <div class="empty-state" id="no-viewings" hidden><div class="icon-placeholder">ICON</div><h2>No viewing requests</h2><p>Viewing requests will show up here.</p><a class="btn btn-primary" href="properties.html">View my properties</a></div>
+ </main>
+</div>
+<script defer src="../js/properties.js"></script>
+<script defer src="../js/landlord.js"></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Find a place — NyumbaLink</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+ <a class="logo" href="index.html"><img class="site-logo" src="assets/images/nyumbalink-logo-horizontal.svg" alt="NyumbaLink"></a>
+ <nav class="main-nav" aria-label="Main navigation">
+  <ul><li><a href="search.html">Find a place</a></li><li><a href="list-property.html">List your property</a></li><li><a href="how-it-works.html">How it works</a></li><li><a href="saved.html">Saved</a></li><li><a href="login.html">Sign in</a></li></ul>
+  <a class="btn btn-primary nav-cta" href="list-property.html">List your property</a>
+ </nav>
+</header>
+<main>
+<section class="search-bar" aria-label="Search">
+ <form id="search-form" action="search.html" method="get">
+  <input type="text" name="where" aria-label="Location" placeholder="e.g. Mombasa, Tudor, Nyali">
+  <select name="type" aria-label="Property type"><option value="">Any type</option><option>Bedsitter</option><option>Single room</option><option>1 Bedroom</option><option>2 Bedroom</option><option>Student room</option><option>Apartment</option><option>House</option></select>
+  <input type="text" name="max_rent" inputmode="numeric" aria-label="Maximum rent" placeholder="e.g. KSh 10,000">
+  <button class="btn btn-primary" type="submit">Search</button>
+ </form>
+</section>
+
+<div class="search-layout">
+ <aside class="filters" id="filters" aria-label="Filters">
+  <h2>Filters</h2>
+  <form id="filters-form">
+   <div class="field"><label for="f-location">Location</label><input id="f-location" type="text" placeholder="e.g. Tudor"></div>
+   <div class="field"><label for="f-type">Property type</label><select id="f-type"><option>Any</option><option>Bedsitter</option><option>Single room</option><option>1 Bedroom</option><option>2 Bedroom</option><option>Student room</option><option>Apartment</option><option>House</option></select></div>
+   <div class="price-range"><div class="field"><label for="f-min">Min rent</label><input id="f-min" type="number" placeholder="KSh 0"></div><div class="field"><label for="f-max">Max rent</label><input id="f-max" type="number" placeholder="KSh 20,000"></div></div>
+   <fieldset><legend>Amenities</legend>
+    <label class="check"><input type="checkbox" name="amenities" value="Water"> Water</label>
+    <label class="check"><input type="checkbox" name="amenities" value="Electricity"> Electricity</label>
+    <label class="check"><input type="checkbox" name="amenities" value="Wi-Fi"> Wi-Fi</label>
+    <label class="check"><input type="checkbox" name="amenities" value="Cooking"> Cooking</label>
+    <label class="check"><input type="checkbox" name="amenities" value="Parking"> Parking</label>
+    <label class="check"><input type="checkbox" name="amenities" value="Security"> Security</label>
+    <label class="check"><input type="checkbox" name="amenities" value="Laundry"> Laundry</label>
+    <label class="check"><input type="checkbox" name="amenities" value="Borehole"> Borehole</label>
+    <label class="check"><input type="checkbox" name="amenities" value="Backup power"> Backup power</label>
+   </fieldset>
+   <fieldset><legend>Show only</legend>
+    <label class="check"><input type="checkbox" name="verified"> Verified only</label>
+    <label class="check"><input type="checkbox" name="available"> Available now</label>
+    <label class="check"><input type="checkbox" name="video"> Has video</label>
+   </fieldset>
+   <button class="btn btn-primary" type="submit">Apply filters</button>
+  </form>
+ </aside>
+
+ <section class="results" id="results" aria-label="Search results">
+  <div class="results-header">
+   <p class="results-count" id="results-count">8 places found in Mombasa</p>
+   <div class="sort-bar"><label for="sort">Sort by</label>
+    <select id="sort"><option>Recommended</option><option>Price: Low to High</option><option>Price: High to Low</option><option>Recently verified</option></select></div>
+  </div>
+  <div class="property-grid" id="property-grid">
+   <article class="property-card">
+    <div class="property-card-image"><div class="image-placeholder property-image">PROPERTY IMAGE</div>
+     <span class="property-verification badge-verified">✓ NyumbaLink Verified</span>
+     <button class="property-save" type="button" aria-label="Save property">♡</button>
+     <span class="video-indicator">▶ Walkthrough available</span></div>
+    <div class="property-card-content">
+     <h3 class="property-name">Tudor Student Residences</h3>
+     <p class="property-location">Tudor, Mombasa</p>
+     <p class="property-distance">8 min walk to Mombasa Technical University</p>
+     <p class="property-type">Single room</p>
+     <p class="property-price">KSh 5,000<span>/month</span></p>
+     <p class="property-deposit">Deposit: KSh 5,000</p>
+     <p class="property-status status-available">🟢 Available now — confirmed 2 hours ago</p>
+     <p class="property-verified-date">Verified 2 hours ago</p>
+     <a class="btn btn-primary" href="property.html?id=tudor-student-residences">View property</a>
+    </div>
+   </article>
+   <article class="property-card">
+    <div class="property-card-image"><div class="image-placeholder property-image">PROPERTY IMAGE</div>
+     <span class="property-verification badge-verified">✓ NyumbaLink Verified</span>
+     <button class="property-save" type="button" aria-label="Save property">♡</button>
+     <span class="video-indicator">▶ Walkthrough available</span></div>
+    <div class="property-card-content">
+     <h3 class="property-name">Nyali Bedsitters</h3>
+     <p class="property-location">Nyali, Mombasa</p>
+     <p class="property-distance">5 min walk to Nyali Centre</p>
+     <p class="property-type">Bedsitter</p>
+     <p class="property-price">KSh 10,000<span>/month</span></p>
+     <p class="property-deposit">Deposit: KSh 10,000</p>
+     <p class="property-status status-available">🟢 Available now — confirmed yesterday</p>
+     <p class="property-verified-date">Verified yesterday</p>
+     <a class="btn btn-primary" href="property.html?id=nyali-bedsitters">View property</a>
+    </div>
+   </article>
+   <article class="property-card">
+    <div class="property-card-image"><div class="image-placeholder property-image">PROPERTY IMAGE</div>
+     <span class="property-verification badge-verified">✓ NyumbaLink Verified</span>
+     <button class="property-save" type="button" aria-label="Save property">♡</button>
+     <span class="video-indicator">▶ Walkthrough available</span></div>
+    <div class="property-card-content">
+     <h3 class="property-name">Bamburi Court Apartments</h3>
+     <p class="property-location">Bamburi, Mombasa</p>
+     <p class="property-distance">Near Bamburi Mtambo stage</p>
+     <p class="property-type">1 Bedroom</p>
+     <p class="property-price">KSh 14,500<span>/month</span></p>
+     <p class="property-deposit">Deposit: KSh 14,500</p>
+     <p class="property-status status-available">🟢 Available now</p>
+     <p class="property-verified-date">Verified 3 days ago</p>
+     <a class="btn btn-primary" href="property.html?id=bamburi-court-apartments">View property</a>
+    </div>
+   </article>
+   <article class="property-card">
+    <div class="property-card-image"><div class="image-placeholder property-image">PROPERTY IMAGE</div>
+     <span class="property-verification badge-verified">✓ NyumbaLink Verified</span>
+     <button class="property-save" type="button" aria-label="Save property">♡</button>
+     <span class="video-indicator">▶ Walkthrough available</span></div>
+    <div class="property-card-content">
+     <h3 class="property-name">Changamwe Student Hostel</h3>
+     <p class="property-location">Changamwe, Mombasa</p>
+     <p class="property-distance">10 min matatu to town</p>
+     <p class="property-type">Student room</p>
+     <p class="property-price">KSh 4,200<span>/month</span></p>
+     <p class="property-deposit">Deposit: KSh 4,200</p>
+     <p class="property-status status-confirm">🟡 Availability needs confirmation</p>
+     <p class="property-verified-date">Verified 5 days ago</p>
+     <a class="btn btn-primary" href="property.html?id=changamwe-student-hostel">View property</a>
+    </div>
+   </article>
+   <article class="property-card">
+    <div class="property-card-image"><div class="image-placeholder property-image">PROPERTY IMAGE</div>
+     <span class="property-verification badge-verified">✓ NyumbaLink Verified</span>
+     <button class="property-save" type="button" aria-label="Save property">♡</button>
+     <span class="video-indicator">▶ Walkthrough available</span></div>
+    <div class="property-card-content">
+     <h3 class="property-name">Kisauni Family Home</h3>
+     <p class="property-location">Kisauni, Mombasa</p>
+     <p class="property-distance">2 min walk to Kisauni road</p>
+     <p class="property-type">2 Bedroom</p>
+     <p class="property-price">KSh 18,000<span>/month</span></p>
+     <p class="property-deposit">Deposit: KSh 18,000</p>
+     <p class="property-status status-available">🟢 Available now</p>
+     <p class="property-verified-date">Verified last week</p>
+     <a class="btn btn-primary" href="property.html?id=kisauni-family-home">View property</a>
+    </div>
+   </article>
+   <article class="property-card">
+    <div class="property-card-image"><div class="image-placeholder property-image">PROPERTY IMAGE</div>
+     <span class="property-verification badge-verified">✓ NyumbaLink Verified</span>
+     <button class="property-save" type="button" aria-label="Save property">♡</button>
+     <span class="video-indicator">▶ Walkthrough available</span></div>
+    <div class="property-card-content">
+     <h3 class="property-name">Likoni Heights</h3>
+     <p class="property-location">Likoni, Mombasa</p>
+     <p class="property-distance">7 min walk to Likoni ferry</p>
+     <p class="property-type">Single room</p>
+     <p class="property-price">KSh 6,500<span>/month</span></p>
+     <p class="property-deposit">Deposit: KSh 6,500</p>
+     <p class="property-status status-unavailable">🔴 Currently unavailable</p>
+     <p class="property-verified-date">Verified 2 days ago</p>
+     <a class="btn btn-primary" href="property.html?id=likoni-heights">View property</a>
+    </div>
+   </article>
+   <article class="property-card">
+    <div class="property-card-image"><div class="image-placeholder property-image">PROPERTY IMAGE</div>
+     <span class="property-verification badge-verified">✓ NyumbaLink Verified</span>
+     <button class="property-save" type="button" aria-label="Save property">♡</button>
+     <span class="video-indicator">▶ Walkthrough available</span></div>
+    <div class="property-card-content">
+     <h3 class="property-name">Mtwapa Palm Rooms</h3>
+     <p class="property-location">Mtwapa, Kilifi</p>
+     <p class="property-distance">3 min walk to Mtwapa stage</p>
+     <p class="property-type">Bedsitter</p>
+     <p class="property-price">KSh 7,800<span>/month</span></p>
+     <p class="property-deposit">Deposit: KSh 7,800</p>
+     <p class="property-status status-available">🟢 Last confirmed 5 days ago</p>
+     <p class="property-verified-date">Verified 5 days ago</p>
+     <a class="btn btn-primary" href="property.html?id=mtwapa-palm-rooms">View property</a>
+    </div>
+   </article>
+   <article class="property-card">
+    <div class="property-card-image"><div class="image-placeholder property-image">PROPERTY IMAGE</div>
+     <span class="property-verification badge-verified">✓ NyumbaLink Verified</span>
+     <button class="property-save" type="button" aria-label="Save property">♡</button>
+     <span class="video-indicator">▶ Walkthrough available</span></div>
+    <div class="property-card-content">
+     <h3 class="property-name">Moi Avenue Studio Flats</h3>
+     <p class="property-location">Mombasa CBD</p>
+     <p class="property-distance">2 min walk to Moi Avenue</p>
+     <p class="property-type">Apartment</p>
+     <p class="property-price">KSh 22,000<span>/month</span></p>
+     <p class="property-deposit">Deposit: KSh 22,000</p>
+     <p class="property-status status-available">🟢 Available now</p>
+     <p class="property-verified-date">Verified today</p>
+     <a class="btn btn-primary" href="property.html?id=moi-avenue-studio-flats">View property</a>
+    </div>
+   </article>
+  </div>
+  <div class="empty-state" id="no-results" hidden>
+   <div class="icon-placeholder">ICON</div><h2>No places found</h2><p>Try changing your location, budget or filters.</p><a class="btn btn-primary" href="search.html">Clear filters</a>
+  </div>
+  <nav class="pagination" aria-label="Pagination"><a class="current" href="#">1</a><a href="#">2</a><a href="#">3</a></nav>
+ </section>
+
+ <aside class="search-map" aria-label="Map"><div class="map-placeholder" id="map-placeholder">MAP PLACEHOLDER</div></aside>
+</div>
+</main>
+<footer class="site-footer">
+ <div class="footer-grid">
+  <section><h2>NyumbaLink</h2><p>Find your place. Skip the hassle.</p></section>
+  <nav aria-label="Explore"><h3>Explore</h3><ul><li><a href="search.html">Find a place</a></li><li><a href="saved.html">Saved properties</a></li><li><a href="how-it-works.html">How it works</a></li></ul></nav>
+  <nav aria-label="Landlords"><h3>Landlords</h3><ul><li><a href="list-property.html">List your property</a></li><li><a href="landlord/dashboard.html">Landlord dashboard</a></li><li><a href="landlord/verification.html">Verification</a></li></ul></nav>
+  <nav aria-label="Company"><h3>Company</h3><ul><li><a href="#">About</a></li><li><a href="#">Contact</a></li><li><a href="#">Help</a></li></ul></nav>
+  <nav aria-label="Legal"><h3>Legal</h3><ul><li><a href="#">Terms</a></li><li><a href="#">Privacy</a></li><li><a href="#">Safety</a></li></ul></nav>
+ </div>
+ <p class="footer-bottom">© 2026 NyumbaLink. All rights reserved.</p>
+</footer>
+<nav class="mobile-nav" aria-label="Mobile navigation"><a href="index.html">Home</a><a href="search.html">Search</a><a href="saved.html">Saved</a><a href="login.html">Account</a></nav>
+<script defer src="js/properties.js"></script>
+<script defer src="js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Create account — NyumbaLink</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="auth-layout">
+ <section class="auth-panel">
+  <a class="logo" href="index.html"><img class="site-logo" src="assets/images/nyumbalink-logo-horizontal.svg" alt="NyumbaLink"></a>
+  <h1>Create your account</h1>
+  <form class="form-card" id="register-form" action="#" method="post">
+   <fieldset class="form-section account-type"><legend>I am…</legend>
+    <label><input type="radio" name="account-type" value="tenant" checked> I am looking for a place</label>
+    <label><input type="radio" name="account-type" value="landlord"> I am a landlord/property owner</label>
+   </fieldset>
+   <div class="field"><label for="full-name">Full name</label><input id="full-name" name="full-name" type="text" placeholder="Your full name"></div>
+   <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com"></div>
+   <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" placeholder="07XX XXX XXX"></div>
+   <div class="field"><label for="password">Password</label><input id="password" name="password" type="password" placeholder="Create a password"></div>
+   <div class="field"><label for="confirm-password">Confirm password</label><input id="confirm-password" name="confirm-password" type="password" placeholder="Repeat password"></div>
+   <label class="checkbox-inline"><input type="checkbox" name="terms"> I agree to the <a href="#">Terms</a> and <a href="#">Privacy Policy</a></label>
+   <button class="btn btn-primary" type="submit">Create account</button>
+  </form>
+  <p class="auth-switch">Already have an account? <a href="login.html">Sign in</a></p>
+ </section>
+ <aside class="auth-visual"><div id="auth-image-placeholder">AUTH IMAGE PLACEHOLDER</div></aside>
+</main>
+<script defer src="js/properties.js"></script>
+<script defer src="js/auth.js"></script>
+</body>
+</html>

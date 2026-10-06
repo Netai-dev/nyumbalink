@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NyumbaLink — Find your place. Skip the hassle.</title>
+<meta name="description" content="Discover verified homes, rooms and rentals in Mombasa and request a viewing for free.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-home">
+
+<header class="site-header" id="site-header">
+ <a class="logo" href="index.html"><img class="site-logo" src="assets/images/nyumbalink-logo-horizontal.svg" alt="NyumbaLink"></a>
+ <nav class="main-nav" aria-label="Main navigation">
+  <ul>
+   <li><a href="search.html">Find a place</a></li>
+   <li><a href="list-property.html">List your property</a></li>
+   <li><a href="how-it-works.html">How it works</a></li>
+   <li><a href="saved.html">Saved</a></li>
+   <li><a href="login.html">Sign in</a></li>
+  </ul>
+  <a class="btn btn-primary nav-cta" href="list-property.html">List your property</a>
+ </nav>
+</header>
+
+<main>
+<section class="hero" id="hero">
+ <div class="hero-content">
+  <h1>Find your place. Skip the hassle.</h1>
+  <p>Discover verified homes, rooms and rentals, see what they really look like, and request a viewing for free.</p>
+  <form class="search-form" id="hero-search" action="search.html" method="get">
+   <div class="field"><label for="where">Where?</label>
+    <input id="where" name="where" type="text" placeholder="e.g. Mombasa, Tudor, Nyali"></div>
+   <div class="field"><label for="type">What are you looking for?</label>
+    <select id="type" name="type">
+     <option value="">Any type</option><option>Bedsitter</option><option>Single room</option>
+     <option>1 Bedroom</option><option>2 Bedroom</option><option>Student room</option>
+     <option>Apartment</option><option>House</option>
+    </select></div>
+   <div class="field"><label for="max-rent">Maximum rent</label>
+    <input id="max-rent" name="max_rent" type="text" inputmode="numeric" placeholder="e.g. KSh 10,000"></div>
+   <button class="btn btn-primary" type="submit">Search</button>
+  </form>
+  <ul class="type-chips" aria-label="Property types">
+   <li>Bedsitter</li><li>Single room</li><li>1 Bedroom</li><li>2 Bedroom</li><li>Student room</li><li>Apartment</li><li>House</li>
+  </ul>
+ </div>
+ <div class="hero-media"><div class="image-placeholder hero-image-placeholder" id="hero-image-placeholder">HERO IMAGE — Kenyan property / lifestyle photo</div></div>
+</section>
+
+<section class="trust" id="why-nyumbalink">
+ <h2>Why NyumbaLink</h2>
+ <div class="trust-grid">
+  <article class="trust-card"><div class="icon-placeholder">ICON</div><h3>Verified properties</h3><p>We check key property details before listing them.</p></article>
+  <article class="trust-card"><div class="icon-placeholder">ICON</div><h3>Real photos &amp; videos</h3><p>See the actual property before deciding to visit.</p></article>
+  <article class="trust-card"><div class="icon-placeholder">ICON</div><h3>Free viewing requests</h3><p>Request a physical viewing without paying NyumbaLink.</p></article>
+  <article class="trust-card"><div class="icon-placeholder">ICON</div><h3>Clear pricing</h3><p>See rent, deposit and other known costs upfront.</p></article>
+ </div>
+</section>
+
+<section class="featured" id="featured-properties">
+ <h2>Featured properties</h2>
+ <p>Explore places currently available.</p>
+ <div class="property-grid" id="property-grid">
+  <article class="property-card">
+   <div class="property-card-image"><div class="image-placeholder property-image">PROPERTY IMAGE</div>
+    <span class="property-verification badge-verified">✓ NyumbaLink Verified</span>
+    <button class="property-save" type="button" aria-label="Save property">♡</button>
+    <span class="video-indicator">▶ Walkthrough available</span></div>
+   <div class="property-card-content">
+    <h3 class="property-name">Tudor Student Residences</h3>
+    <p class="property-location">Tudor, Mombasa</p>
+    <p class="property-distance">8 min walk to Mombasa Technical University</p>
+    <p class="property-type">Single room</p>
+    <p class="property-price">KSh 5,000<span>/month</span></p>
+    <p class="property-deposit">Deposit: KSh 5,000</p>
+    <p class="property-status status-available">🟢 Available now</p>
+    <p class="property-verified-date">Verified 2 hours ago</p>
+    <a class="btn btn-primary" href="property.html">View property</a>
+   </div>
+  </article>
+  <article class="property-card">
+   <div class="property-card-image"><div class="image-placeholder property-image">PROPERTY IMAGE</div>
+    <span class="property-verification badge-verified">✓ NyumbaLink Verified</span>
+    <button class="property-save" type="button" aria-label="Save property">♡</button>
+    <span class="video-indicator">▶ Walkthrough available</span></div>
+   <div class="property-card-content">
+    <h3 class="property-name">Nyali Bedsitters</h3>
+    <p class="property-location">Nyali, Mombasa</p>
+    <p class="property-distance">5 min walk to Nyali Centre</p>
+    <p class="property-type">Bedsitter</p>
+    <p class="property-price">KSh 10,000<span>/month</span></p>
+    <p class="property-deposit">Deposit: KSh 10,000</p>
+    <p class="property-status status-available">🟢 Available now</p>
+    <p class="property-verified-date">Verified yesterday</p>
+    <a class="btn btn-primary" href="property.html">View property</a>
+   </div>
+  </article>
+  <article class="property-card">
+   <div class="property-card-image"><div class="image-placeholder property-image">PROPERTY IMAGE</div>
+    <span class="property-verification badge-verified">✓ NyumbaLink Verified</span>
+    <button class="property-save" type="button" aria-label="Save property">♡</button>
+    <span class="video-indicator">▶ Walkthrough available</span></div>
+   <div class="property-card-content">
+    <h3 class="property-name">Bamburi Court Apartments</h3>
+    <p class="property-location">Bamburi, Mombasa</p>
+    <p class="property-distance">Near Bamburi Mtambo stage</p>
+    <p class="property-type">1 Bedroom</p>
+    <p class="property-price">KSh 14,500<span>/month</span></p>
+    <p class="property-deposit">Deposit: KSh 14,500</p>
+    <p class="property-status status-available">🟢 Available now — confirmed today</p>
+    <p class="property-verified-date">Verified 3 days ago</p>
+    <a class="btn btn-primary" href="property.html">View property</a>
+   </div>
+  </article>
+  <article class="property-card">
+   <div class="property-card-image"><div class="image-placeholder property-image">PROPERTY IMAGE</div>
+    <span class="property-verification badge-verified">✓ NyumbaLink Verified</span>
+    <button class="property-save" type="button" aria-label="Save property">♡</button>
+    <span class="video-indicator">▶ Walkthrough available</span></div>
+   <div class="property-card-content">
+    <h3 class="property-name">Changamwe Student Hostel</h3>
+    <p class="property-location">Changamwe, Mombasa</p>
+    <p class="property-distance">10 min matatu to town</p>
+    <p class="property-type">Student room</p>
+    <p class="property-price">KSh 4,200<span>/month</span></p>
+    <p class="property-deposit">Deposit: KSh 4,200</p>
+    <p class="property-status status-available">🟢 Available now</p>
+    <p class="property-verified-date">Verified 5 days ago</p>
+    <a class="btn btn-primary" href="property.html">View property</a>
+   </div>
+  </article>
+  <article class="property-card">
+   <div class="property-card-image"><div class="image-placeholder property-image">PROPERTY IMAGE</div>
+    <span class="property-verification badge-verified">✓ NyumbaLink Verified</span>
+    <button class="property-save" type="button" aria-label="Save property">♡</button>
+    <span class="video-indicator">▶ Walkthrough available</span></div>
+   <div class="property-card-content">
+    <h3 class="property-name">Kisauni Family Home</h3>
+    <p class="property-location">Kisauni, Mombasa</p>
+    <p class="property-distance">2 min walk to Kisauni road</p>
+    <p class="property-type">2 Bedroom</p>
+    <p class="property-price">KSh 18,000<span>/month</span></p>
+    <p class="property-deposit">Deposit: KSh 18,000</p>
+    <p class="property-status status-available">🟢 Available now</p>
+    <p class="property-verified-date">Verified last week</p>
+    <a class="btn btn-primary" href="property.html">View property</a>
+   </div>
+  </article>
+  <article class="property-card">
+   <div class="property-card-image"><div class="image-placeholder property-image">PROPERTY IMAGE</div>
+    <span class="property-verification badge-verified">✓ NyumbaLink Verified</span>
+    <button class="property-save" type="button" aria-label="Save property">♡</button>
+    <span class="video-indicator">▶ Walkthrough available</span></div>
+   <div class="property-card-content">
+    <h3 class="property-name">Likoni Heights</h3>
+    <p class="property-location">Likoni, Mombasa</p>
+    <p class="property-distance">7 min walk to Likoni ferry</p>
+    <p class="property-type">Single room</p>
+    <p class="property-price">KSh 6,500<span>/month</span></p>
+    <p class="property-deposit">Deposit: KSh 6,500</p>
+    <p class="property-status status-available">🟢 Available now</p>
+    <p class="property-verified-date">Verified 2 days ago</p>
+    <a class="btn btn-primary" href="property.html">View property</a>
+   </div>
+  </article>
+ </div>
+ <a class="btn btn-secondary" href="search.html">See all properties</a>
+</section>
+
+<section class="how-it-works" id="how-it-works">
+ <h2>How it works</h2>
+ <ol class="steps">
+  <li><div class="icon-placeholder">ICON</div><h3>1. Search</h3><p>Find properties based on location, price and type.</p></li>
+  <li><div class="icon-placeholder">ICON</div><h3>2. Explore</h3><p>See photos, videos, amenities and pricing.</p></li>
+  <li><div class="icon-placeholder">ICON</div><h3>3. Request a viewing</h3><p>Choose a property and request a physical viewing.</p></li>
+  <li><div class="icon-placeholder">ICON</div><h3>4. Move in</h3><p>If you choose the property, deal directly with the landlord.</p></li>
+ </ol>
+</section>
+
+<section class="landlords-cta" id="for-landlords">
+ <div class="landlords-content">
+  <h2>Have a property to rent?</h2>
+  <p>List your property on NyumbaLink and connect with people actively looking for a place to live.</p>
+  <a class="btn btn-primary" href="list-property.html">List your property</a>
+  <a class="btn btn-secondary" href="how-it-works.html">Learn how it works</a>
+ </div>
+ <div class="image-placeholder landlord-image-placeholder" id="landlord-image-placeholder">LANDLORD / PROPERTY IMAGE</div>
+</section>
+
+<section class="verification" id="verification">
+ <div class="verification-content">
+  <h2>Know what you're looking at.</h2>
+  <p>NyumbaLink listings can eventually be physically verified. Verification may include:</p>
+  <ul class="verification-checklist">
+   <li>✓ Property location</li><li>✓ Landlord/caretaker identity</li><li>✓ Rent</li><li>✓ Deposit</li>
+   <li>✓ Amenities</li><li>✓ Photos/video</li><li>✓ Availability</li>
+  </ul>
+  <p class="disclaimer"><small>Verification helps confirm the information available at the time of inspection. Always physically inspect a property before making any payment.</small></p>
+ </div>
+ <div class="image-placeholder verification-image-placeholder" id="verification-image-placeholder">VERIFICATION IMAGE</div>
+</section>
+
+<section class="final-cta" id="final-cta">
+ <h2>Your next place could be one search away.</h2>
+ <a class="btn btn-primary" href="search.html">Find a place</a>
+ <a class="btn btn-secondary" href="list-property.html">List your property</a>
+</section>
+</main>
+
+<footer class="site-footer">
+ <div class="footer-grid">
+  <section><h2>NyumbaLink</h2><p>Find your place. Skip the hassle.</p></section>
+  <nav aria-label="Explore"><h3>Explore</h3><ul><li><a href="search.html">Find a place</a></li><li><a href="saved.html">Saved properties</a></li><li><a href="how-it-works.html">How it works</a></li></ul></nav>
+  <nav aria-label="Landlords"><h3>Landlords</h3><ul><li><a href="list-property.html">List your property</a></li><li><a href="landlord/dashboard.html">Landlord dashboard</a></li><li><a href="landlord/verification.html">Verification</a></li></ul></nav>
+  <nav aria-label="Company"><h3>Company</h3><ul><li><a href="#">About</a></li><li><a href="#">Contact</a></li><li><a href="#">Help</a></li></ul></nav>
+  <nav aria-label="Legal"><h3>Legal</h3><ul><li><a href="#">Terms</a></li><li><a href="#">Privacy</a></li><li><a href="#">Safety</a></li></ul></nav>
+ </div>
+ <p class="footer-bottom">© 2026 NyumbaLink. All rights reserved.</p>
+</footer>
+
+<nav class="mobile-nav" aria-label="Mobile navigation">
+ <a href="index.html">Home</a><a href="search.html">Search</a><a href="saved.html">Saved</a><a href="login.html">Account</a>
+</nav>
+<script defer src="js/properties.js"></script>
+</body>
+</html>

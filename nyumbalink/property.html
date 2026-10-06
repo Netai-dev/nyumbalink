@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tudor Student Residences — NyumbaLink</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+ <a class="logo" href="index.html"><img class="site-logo" src="assets/images/nyumbalink-logo-horizontal.svg" alt="NyumbaLink"></a>
+ <nav class="main-nav" aria-label="Main navigation">
+  <ul><li><a href="search.html">Find a place</a></li><li><a href="list-property.html">List your property</a></li><li><a href="how-it-works.html">How it works</a></li><li><a href="saved.html">Saved</a></li><li><a href="login.html">Sign in</a></li></ul>
+  <a class="btn btn-primary nav-cta" href="list-property.html">List your property</a>
+ </nav>
+</header>
+<main>
+<nav aria-label="Breadcrumb"><ol class="breadcrumb"><li><a href="index.html">Home</a></li><li><a href="search.html">Mombasa</a></li><li><a href="search.html">Tudor</a></li><li aria-current="page">Property</li></ol></nav>
+
+<section class="property-header">
+ <div>
+  <h1 id="property-title">Tudor Student Residences</h1>
+  <p class="property-location">Tudor, Mombasa</p>
+  <span class="property-verification badge-verified pill pill-green">✓ NyumbaLink Verified</span>
+ </div>
+ <div class="property-actions"><button class="btn btn-secondary btn-sm" type="button">♡ Save property</button></div>
+</section>
+
+<section class="property-media" aria-label="Property media">
+ <div class="property-gallery" id="property-gallery">
+  <div class="image-placeholder main-image property-image" id="main-property-image">MAIN PROPERTY IMAGE</div>
+  <div class="image-placeholder thumb">ROOM</div><div class="image-placeholder thumb">BATHROOM</div>
+  <div class="image-placeholder thumb">KITCHEN</div><div class="image-placeholder thumb">ENTRANCE</div>
+  <div class="image-placeholder thumb">COMPOUND</div><div class="image-placeholder thumb">SURROUNDINGS</div>
+ </div>
+ <div class="property-video" id="property-video"><h2>Property walkthrough</h2><div class="video-placeholder">[VIDEO PLACEHOLDER]</div></div>
+</section>
+
+<div class="property-layout">
+ <div class="property-main">
+  <section id="property-info"><h2>Property information</h2>
+   <dl class="info-grid">
+    <div><dt>Property name</dt><dd id="detail-property-name">Tudor Student Residences</dd></div><div><dt>Location</dt><dd id="detail-location">Tudor, Mombasa</dd></div>
+    <div><dt>Property type</dt><dd id="detail-property-type">Student hostel</dd></div><div><dt>Room type</dt><dd id="detail-room-type">Single room</dd></div>
+    <div><dt>Monthly rent</dt><dd id="detail-rent">KSh 5,000</dd></div><div><dt>Deposit</dt><dd id="detail-deposit">KSh 5,000</dd></div>
+    <div><dt>Other charges</dt><dd id="detail-other-charges">Water: KSh 200/month</dd></div><div><dt>Estimated move-in total</dt><dd id="detail-move-in-total">KSh 10,000</dd></div>
+    <div><dt>Availability</dt><dd id="detail-availability" class="status-available">🟢 Available now — confirmed 2 hours ago</dd></div><div><dt>Last verified</dt><dd id="detail-last-verified">5 October 2026</dd></div>
+   </dl></section>
+
+  <section id="landlord-rating"><h2>Landlord</h2>
+   <div class="landlord-rating"><div><strong id="landlord-name">Amina Hassan</strong><span class="demo-label">Demo data</span><p style="margin:.25rem 0 0;color:var(--muted)">Based on tenant feedback</p></div><div class="rating"><span class="stars">★★★★★</span> <strong id="landlord-rating-value">4.8</strong><small id="landlord-review-count">(32 reviews)</small></div></div>
+  </section>
+
+  <section id="amenities"><h2>Amenities</h2>
+   <ul class="amenities-grid" id="amenities-list">
+    <li><span class="icon-placeholder">ICON</span>Water</li><li><span class="icon-placeholder">ICON</span>Electricity</li><li><span class="icon-placeholder">ICON</span>Wi-Fi</li>
+    <li><span class="icon-placeholder">ICON</span>Cooking</li><li><span class="icon-placeholder">ICON</span>Parking</li><li><span class="icon-placeholder">ICON</span>Security</li>
+    <li><span class="icon-placeholder">ICON</span>Laundry</li><li><span class="icon-placeholder">ICON</span>Borehole</li><li><span class="icon-placeholder">ICON</span>Backup power</li>
+    <li><span class="icon-placeholder">ICON</span>Bathroom</li><li><span class="icon-placeholder">ICON</span>Kitchen</li>
+   </ul></section>
+
+  <section id="verification-details"><details class="verification-card" open>
+   <summary>NyumbaLink Verified</summary>
+   <ul><li>✓ Location checked</li><li>✓ Rent checked</li><li>✓ Deposit checked</li><li>✓ Amenities checked</li><li>✓ Photos captured</li><li>✓ Video captured</li><li>✓ Availability confirmed</li></ul>
+   <p><strong>Last verified:</strong> <span id="verification-last-verified">5 October 2026</span></p>
+   <h3>What verification means</h3>
+   <p>Verification helps confirm the information available at the time of inspection. Always physically inspect a property before making any payment.</p>
+  </details></section>
+
+  <section id="property-location"><h2>Location</h2>
+   <p id="detail-address">Off Tudor Road, Tudor, Mombasa. Placeholder address description.</p>
+   <div class="map-placeholder" id="map-placeholder">MAP PLACEHOLDER</div>
+   <h3>Nearby</h3>
+   <ul class="nearby-list"><li>🎓 University — 8 min walk</li><li>🚌 Transport — 2 min walk</li><li>🛒 Shops — 3 min walk</li><li>🏥 Hospital — 10 min</li><li>🍽 Restaurants — 5 min walk</li><li>📍 Other landmarks</li></ul></section>
+ </div>
+
+ <aside class="property-aside" aria-label="Pricing and viewing">
+  <div class="price-box" id="price-breakdown"><h2>Price breakdown</h2>
+   <div class="price-row"><span>Monthly rent</span><strong>KSh 5,000</strong></div>
+   <div class="price-row"><span>Deposit</span><strong>KSh 5,000</strong></div>
+   <div class="price-row free"><span>NyumbaLink fee</span><strong>KSh 0</strong></div>
+   <div class="price-row free"><span>Viewing</span><strong>FREE</strong></div>
+   <div class="price-row total"><span>Estimated initial payment</span><span>KSh 10,000</span></div>
+   <a class="btn btn-primary viewing-link" href="viewing.html">Request a free viewing</a>
+   <button class="btn btn-secondary" type="button">Contact landlord</button>
+   <p class="price-note">Final payment terms are confirmed directly with the landlord.</p>
+  </div>
+ </aside>
+</div>
+<div class="mobile-viewing-bar"><a class="btn btn-primary viewing-link" href="viewing.html">Request a free viewing</a><button class="btn btn-secondary" type="button">Contact</button></div>
+</main>
+<footer class="site-footer">
+ <div class="footer-grid">
+  <section><h2>NyumbaLink</h2><p>Find your place. Skip the hassle.</p></section>
+  <nav aria-label="Explore"><h3>Explore</h3><ul><li><a href="search.html">Find a place</a></li><li><a href="saved.html">Saved properties</a></li><li><a href="how-it-works.html">How it works</a></li></ul></nav>
+  <nav aria-label="Landlords"><h3>Landlords</h3><ul><li><a href="list-property.html">List your property</a></li><li><a href="landlord/dashboard.html">Landlord dashboard</a></li><li><a href="landlord/verification.html">Verification</a></li></ul></nav>
+  <nav aria-label="Company"><h3>Company</h3><ul><li><a href="#">About</a></li><li><a href="#">Contact</a></li><li><a href="#">Help</a></li></ul></nav>
+  <nav aria-label="Legal"><h3>Legal</h3><ul><li><a href="#">Terms</a></li><li><a href="#">Privacy</a></li><li><a href="#">Safety</a></li></ul></nav>
+ </div>
+ <p class="footer-bottom">© 2026 NyumbaLink. All rights reserved.</p>
+</footer>
+<nav class="mobile-nav" aria-label="Mobile navigation"><a href="index.html">Home</a><a href="search.html">Search</a><a href="saved.html">Saved</a><a href="login.html">Account</a></nav>
+<script defer src="js/properties.js"></script>
+</body>
+</html>

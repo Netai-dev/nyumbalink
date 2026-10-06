@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Landlords — NyumbaLink Admin</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="admin">
+<div class="dash-layout">
+ <aside class="sidebar">
+  <a class="logo" href="../index.html"><img class="site-logo" src="../assets/images/nyumbalink-logo-horizontal.svg" alt="NyumbaLink"></a>
+  <nav aria-label="Admin navigation"><ul>
+   <li><a href="dashboard.html">Dashboard</a></li>
+   <li><a href="properties.html">Properties</a></li>
+   <li><a href="landlords.html" aria-current="page">Landlords</a></li>
+   <li><a href="tenants.html">Tenants</a></li>
+   <li><a href="leads.html">Leads</a></li>
+   <li><a href="verification.html">Verification</a></li>
+   <li><a href="#">Complaints</a></li>
+   <li><a href="#">Successful move-ins</a></li>
+   <li><a href="#">Referral fees</a></li>
+  </ul></nav>
+ </aside>
+ <main class="dash-main">
+  <div class="admin-toolbar"><input type="search" aria-label="Search" placeholder="Search"><select aria-label="Filter"><option>All</option></select></div>
+  <div class="table-wrap"><table class="data-table" id="landlords-table"><thead><tr>
+<th>Landlord</th>
+<th>Phone</th>
+<th>Properties</th>
+<th>Verified properties</th>
+<th>Leads</th>
+<th>Successful move-ins</th>
+<th>Reliability</th>
+<th>Status</th>
+</tr></thead><tbody>
+<tr><td>Joseph K.</td><td>0712 000 001</td><td>12</td><td>10</td><td>48</td><td>9</td><td><span class="reliability"><span style="width:90%"></span></span></td><td><span class="pill pill-green">Active</span></td></tr>
+<tr><td>Mary N.</td><td>0722 000 002</td><td>5</td><td>5</td><td>31</td><td>6</td><td><span class="reliability"><span style="width:95%"></span></span></td><td><span class="pill pill-green">Active</span></td></tr>
+<tr><td>Ali H.</td><td>0733 000 003</td><td>3</td><td>1</td><td>9</td><td>1</td><td><span class="reliability"><span style="width:55%"></span></span></td><td><span class="pill pill-amber">Under review</span></td></tr>
+</tbody></table></div>
+ </main>
+</div>
+<script defer src="../js/properties.js"></script>
+<script defer src="../js/admin.js"></script>
+</body>
+</html>

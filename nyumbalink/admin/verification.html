@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verification — NyumbaLink Admin</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="admin">
+<div class="dash-layout">
+ <aside class="sidebar">
+  <a class="logo" href="../index.html"><img class="site-logo" src="../assets/images/nyumbalink-logo-horizontal.svg" alt="NyumbaLink"></a>
+  <nav aria-label="Admin navigation"><ul>
+   <li><a href="dashboard.html">Dashboard</a></li>
+   <li><a href="properties.html">Properties</a></li>
+   <li><a href="landlords.html">Landlords</a></li>
+   <li><a href="tenants.html">Tenants</a></li>
+   <li><a href="leads.html">Leads</a></li>
+   <li><a href="verification.html" aria-current="page">Verification</a></li>
+   <li><a href="#">Complaints</a></li>
+   <li><a href="#">Successful move-ins</a></li>
+   <li><a href="#">Referral fees</a></li>
+  </ul></nav>
+ </aside>
+ <main class="dash-main">
+  <header class="dash-header"><h1>Verification queue</h1></header>
+  <section class="queue" id="verification-queue">
+   <article class="queue-item">
+    <div class="image-placeholder">PROPERTY IMAGE</div>
+    <div class="queue-meta"><h3>Changamwe Student Hostel</h3><span>Landlord: Ali H.</span><span>Location: Changamwe, Mombasa</span><span>Rent: KSh 4,200</span><span>Submitted: 3 Oct 2026</span><span><span class="pill pill-amber">Pending</span></span>
+     <ul class="queue-checklist"><li>○ Property physically checked</li><li>○ Landlord/caretaker identity confirmed</li><li>○ Rent confirmed</li><li>○ Deposit confirmed</li><li>○ Amenities checked</li><li>○ Location confirmed</li><li>○ Photos/video captured</li><li>○ Availability confirmed</li></ul></div>
+    <div class="queue-actions"><button class="btn btn-secondary btn-sm" type="button">Review</button><button class="btn btn-approve btn-sm" type="button">Approve</button><button class="btn btn-changes btn-sm" type="button">Request changes</button><button class="btn btn-reject btn-sm" type="button">Reject</button></div>
+   </article>
+   <article class="queue-item">
+    <div class="image-placeholder">PROPERTY IMAGE</div>
+    <div class="queue-meta"><h3>Kisauni Family Home</h3><span>Landlord: Mary N.</span><span>Location: Kisauni, Mombasa</span><span>Rent: KSh 18,000</span><span>Submitted: 2 Oct 2026</span><span><span class="pill pill-amber">Pending</span></span>
+     <ul class="queue-checklist"><li>○ Property physically checked</li><li>○ Landlord/caretaker identity confirmed</li><li>○ Rent confirmed</li><li>○ Deposit confirmed</li><li>○ Amenities checked</li><li>○ Location confirmed</li><li>○ Photos/video captured</li><li>○ Availability confirmed</li></ul></div>
+    <div class="queue-actions"><button class="btn btn-secondary btn-sm" type="button">Review</button><button class="btn btn-approve btn-sm" type="button">Approve</button><button class="btn btn-changes btn-sm" type="button">Request changes</button><button class="btn btn-reject btn-sm" type="button">Reject</button></div>
+   </article>
+   <article class="queue-item">
+    <div class="image-placeholder">PROPERTY IMAGE</div>
+    <div class="queue-meta"><h3>Mtwapa Palm Rooms</h3><span>Landlord: Peter M.</span><span>Location: Mtwapa, Kilifi</span><span>Rent: KSh 7,800</span><span>Submitted: 20 Sep 2026</span><span><span class="pill pill-amber">Needs changes</span></span>
+     <ul class="queue-checklist"><li>○ Property physically checked</li><li>○ Landlord/caretaker identity confirmed</li><li>○ Rent confirmed</li><li>○ Deposit confirmed</li><li>○ Amenities checked</li><li>○ Location confirmed</li><li>○ Photos/video captured</li><li>○ Availability confirmed</li></ul></div>
+    <div class="queue-actions"><button class="btn btn-secondary btn-sm" type="button">Review</button><button class="btn btn-approve btn-sm" type="button">Approve</button><button class="btn btn-changes btn-sm" type="button">Request changes</button><button class="btn btn-reject btn-sm" type="button">Reject</button></div>
+   </article>
+  </section>
+  <div class="empty-state" id="no-verification" hidden><div class="icon-placeholder">ICON</div><h2>No verification requests</h2><p>New submissions will appear here.</p><a class="btn btn-primary" href="properties.html">View properties</a></div>
+ </main>
+</div>
+<script defer src="../js/properties.js"></script>
+<script defer src="../js/admin.js"></script>
+</body>
+</html>

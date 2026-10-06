@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saved properties — NyumbaLink</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+ <a class="logo" href="index.html"><img class="site-logo" src="assets/images/nyumbalink-logo-horizontal.svg" alt="NyumbaLink"></a>
+ <nav class="main-nav" aria-label="Main navigation">
+  <ul><li><a href="search.html">Find a place</a></li><li><a href="list-property.html">List your property</a></li><li><a href="how-it-works.html">How it works</a></li><li><a href="saved.html">Saved</a></li><li><a href="login.html">Sign in</a></li></ul>
+  <a class="btn btn-primary nav-cta" href="list-property.html">List your property</a>
+ </nav>
+</header>
+<main>
+<section class="saved" id="saved-section">
+ <h1>Saved properties</h1>
+ <div class="empty-state" id="empty-saved">
+  <div class="icon-placeholder">♡</div>
+  <h2>No saved properties yet</h2>
+  <p>Save places you like and come back to them later.</p>
+  <a class="btn btn-primary" href="search.html">Find a place</a>
+ </div>
+ <!-- Future saved property cards: JS will render .property-card elements here and hide #empty-saved -->
+ <div class="property-grid" id="saved-grid" aria-live="polite"></div>
+</section>
+</main>
+<footer class="site-footer">
+ <div class="footer-grid">
+  <section><h2>NyumbaLink</h2><p>Find your place. Skip the hassle.</p></section>
+  <nav aria-label="Explore"><h3>Explore</h3><ul><li><a href="search.html">Find a place</a></li><li><a href="saved.html">Saved properties</a></li><li><a href="how-it-works.html">How it works</a></li></ul></nav>
+  <nav aria-label="Landlords"><h3>Landlords</h3><ul><li><a href="list-property.html">List your property</a></li><li><a href="landlord/dashboard.html">Landlord dashboard</a></li><li><a href="landlord/verification.html">Verification</a></li></ul></nav>
+  <nav aria-label="Company"><h3>Company</h3><ul><li><a href="#">About</a></li><li><a href="#">Contact</a></li><li><a href="#">Help</a></li></ul></nav>
+  <nav aria-label="Legal"><h3>Legal</h3><ul><li><a href="#">Terms</a></li><li><a href="#">Privacy</a></li><li><a href="#">Safety</a></li></ul></nav>
+ </div>
+ <p class="footer-bottom">© 2026 NyumbaLink. All rights reserved.</p>
+</footer>
+<nav class="mobile-nav" aria-label="Mobile navigation"><a href="index.html">Home</a><a href="search.html">Search</a><a href="saved.html">Saved</a><a href="login.html">Account</a></nav>
+<script defer src="js/properties.js"></script>
+</body>
+</html>

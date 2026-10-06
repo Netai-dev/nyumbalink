@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard — NyumbaLink Admin</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="admin">
+<div class="dash-layout">
+ <aside class="sidebar">
+  <a class="logo" href="../index.html"><img class="site-logo" src="../assets/images/nyumbalink-logo-horizontal.svg" alt="NyumbaLink"></a>
+  <nav aria-label="Admin navigation"><ul>
+   <li><a href="dashboard.html" aria-current="page">Dashboard</a></li>
+   <li><a href="properties.html">Properties</a></li>
+   <li><a href="landlords.html">Landlords</a></li>
+   <li><a href="tenants.html">Tenants</a></li>
+   <li><a href="leads.html">Leads</a></li>
+   <li><a href="verification.html">Verification</a></li>
+   <li><a href="#">Complaints</a></li>
+   <li><a href="#">Successful move-ins</a></li>
+   <li><a href="#">Referral fees</a></li>
+  </ul></nav>
+ </aside>
+ <main class="dash-main">
+  <header class="dash-header"><h1>Control center</h1></header>
+  <section class="stats-grid" id="stats">
+   <article class="stat-card "><span class="stat-value">248</span><span class="stat-label">Total properties</span></article>   <article class="stat-card "><span class="stat-value">196</span><span class="stat-label">Verified properties</span></article>   <article class="stat-card warn"><span class="stat-value">31</span><span class="stat-label">Pending verification</span></article>   <article class="stat-card "><span class="stat-value">87</span><span class="stat-label">Active landlords</span></article>
+   <article class="stat-card "><span class="stat-value">1204</span><span class="stat-label">Total leads</span></article>   <article class="stat-card "><span class="stat-value">142</span><span class="stat-label">Successful move-ins</span></article>   <article class="stat-card alert"><span class="stat-value">21</span><span class="stat-label">Listings needing attention</span></article>
+  </section>
+  <div class="dash-panels">
+   <section class="panel"><h2>Recent activity</h2><ul class="activity-list"><li>NL-000183 created — Tudor Student Residences</li><li>Nyali Bedsitters approved</li><li>New landlord registered: Joseph K.</li></ul></section>
+   <section class="panel"><h2>Needs attention</h2><ul class="activity-list"><li><span class="pill pill-amber">Stale</span> 12 listings not confirmed in 14 days</li><li><span class="pill pill-red">Complaint</span> 2 open complaints</li></ul></section>
+  </div>
+ </main>
+</div>
+<script defer src="../js/properties.js"></script>
+<script defer src="../js/admin.js"></script>
+</body>
+</html>

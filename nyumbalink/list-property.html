@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>List your property — NyumbaLink</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+ <a class="logo" href="index.html"><img class="site-logo" src="assets/images/nyumbalink-logo-horizontal.svg" alt="NyumbaLink"></a>
+ <nav class="main-nav" aria-label="Main navigation">
+  <ul><li><a href="search.html">Find a place</a></li><li><a href="list-property.html">List your property</a></li><li><a href="how-it-works.html">How it works</a></li><li><a href="saved.html">Saved</a></li><li><a href="login.html">Sign in</a></li></ul>
+  <a class="btn btn-primary nav-cta" href="list-property.html">List your property</a>
+ </nav>
+</header>
+<main class="form-page">
+ <h1>List your property</h1><p>Reach people actively searching for a place to live.</p>
+ <form class="form-card" id="list-property-form" action="#" method="post" enctype="multipart/form-data">
+  <fieldset class="form-section"><legend>Property information</legend>
+   <div class="field"><label for="property-name">Property name</label><input id="property-name" name="property-name" type="text" placeholder="e.g. Tudor Student Residences"></div>
+   <div class="form-row">
+    <div class="field"><label for="property-type">Property type</label><select id="property-type"><option>Apartment</option><option>Hostel</option><option>House</option><option>Bedsitter block</option><option>Commercial</option></select></div>
+    <div class="field"><label for="room-type">Room type</label><select id="room-type"><option>Single room</option><option>Bedsitter</option><option>1 Bedroom</option><option>2 Bedroom</option><option>Student room</option><option>Whole house</option></select></div>
+   </div>
+   <div class="form-row">   <div class="field"><label for="location">Location</label><input id="location" name="location" type="text" placeholder="e.g. Mombasa"></div>   <div class="field"><label for="area">Area / neighborhood</label><input id="area" name="area" type="text" placeholder="e.g. Tudor"></div></div>
+   <div class="field"><label for="address">Address</label><input id="address" name="address" type="text" placeholder="Street, landmark"></div>
+   <div class="form-row">   <div class="field"><label for="rent">Monthly rent (KSh)</label><input id="rent" name="rent" type="number" placeholder="5000"></div>   <div class="field"><label for="deposit">Deposit (KSh)</label><input id="deposit" name="deposit" type="number" placeholder="5000"></div></div>
+   <div class="field"><label for="other-charges">Other charges</label><input id="other-charges" name="other-charges" type="text" placeholder="e.g. Water KSh 200/month"></div>
+   <div class="field"><label for="availability">Availability</label><select id="availability"><option>Available now</option><option>Available soon</option><option>Currently unavailable</option></select></div>
+  </fieldset>
+  <fieldset class="form-section"><legend>Amenities</legend><div class="checkbox-grid">
+    <label><input type="checkbox" name="amenities" value="Water"> Water</label>
+    <label><input type="checkbox" name="amenities" value="Electricity"> Electricity</label>
+    <label><input type="checkbox" name="amenities" value="Wi-Fi"> Wi-Fi</label>
+    <label><input type="checkbox" name="amenities" value="Cooking"> Cooking</label>
+    <label><input type="checkbox" name="amenities" value="Parking"> Parking</label>
+    <label><input type="checkbox" name="amenities" value="Security"> Security</label>
+    <label><input type="checkbox" name="amenities" value="Laundry"> Laundry</label>
+    <label><input type="checkbox" name="amenities" value="Borehole"> Borehole</label>
+    <label><input type="checkbox" name="amenities" value="Backup power"> Backup power</label>
+  </div></fieldset>
+  <fieldset class="form-section"><legend>Photos</legend><div class="upload-grid">
+    <div class="upload-placeholder" id="upload-main"><span>＋</span>Main property image</div>    <div class="upload-placeholder" id="upload-room"><span>＋</span>Bedroom / room</div>    <div class="upload-placeholder" id="upload-bathroom"><span>＋</span>Bathroom</div>    <div class="upload-placeholder" id="upload-kitchen"><span>＋</span>Kitchen</div>    <div class="upload-placeholder" id="upload-entrance"><span>＋</span>Entrance</div>    <div class="upload-placeholder" id="upload-compound"><span>＋</span>Compound</div>    <div class="upload-placeholder" id="upload-other"><span>＋</span>Other</div>
+  </div></fieldset>
+  <fieldset class="form-section"><legend>Video</legend>
+   <div class="upload-placeholder upload-video" id="upload-video"><span>▶</span>Upload property walkthrough video<small>Preferred format: vertical video / phone walkthrough</small></div>
+  </fieldset>
+  <fieldset class="form-section"><legend>Landlord details</legend>
+   <div class="field"><label for="landlord-name">Full name</label><input id="landlord-name" name="landlord-name" type="text" placeholder="Your full name"></div>
+   <div class="form-row">   <div class="field"><label for="landlord-phone">Phone</label><input id="landlord-phone" name="landlord-phone" type="tel" placeholder="07XX XXX XXX"></div>   <div class="field"><label for="landlord-email">Email</label><input id="landlord-email" name="landlord-email" type="email" placeholder="you@example.com"></div></div>
+   <div class="field"><label for="contact-method">Preferred contact method</label><select id="contact-method"><option>Phone call</option><option>WhatsApp</option><option>SMS</option><option>Email</option></select></div>
+  </fieldset>
+  <p class="notice">Your property may need to be verified before appearing publicly on NyumbaLink.</p>
+  <button class="btn btn-primary" type="submit">Submit property for verification</button>
+ </form>
+</main>
+<footer class="site-footer">
+ <div class="footer-grid">
+  <section><h2>NyumbaLink</h2><p>Find your place. Skip the hassle.</p></section>
+  <nav aria-label="Explore"><h3>Explore</h3><ul><li><a href="search.html">Find a place</a></li><li><a href="saved.html">Saved properties</a></li><li><a href="how-it-works.html">How it works</a></li></ul></nav>
+  <nav aria-label="Landlords"><h3>Landlords</h3><ul><li><a href="list-property.html">List your property</a></li><li><a href="landlord/dashboard.html">Landlord dashboard</a></li><li><a href="landlord/verification.html">Verification</a></li></ul></nav>
+  <nav aria-label="Company"><h3>Company</h3><ul><li><a href="#">About</a></li><li><a href="#">Contact</a></li><li><a href="#">Help</a></li></ul></nav>
+  <nav aria-label="Legal"><h3>Legal</h3><ul><li><a href="#">Terms</a></li><li><a href="#">Privacy</a></li><li><a href="#">Safety</a></li></ul></nav>
+ </div>
+ <p class="footer-bottom">© 2026 NyumbaLink. All rights reserved.</p>
+</footer>
+<nav class="mobile-nav" aria-label="Mobile navigation"><a href="index.html">Home</a><a href="search.html">Search</a><a href="saved.html">Saved</a><a href="login.html">Account</a></nav>
+<script defer src="js/properties.js"></script>
+<script defer src="js/viewing.js"></script>
+</body>
+</html>

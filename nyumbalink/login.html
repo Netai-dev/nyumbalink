@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign in — NyumbaLink</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="auth-layout">
+ <section class="auth-panel">
+  <a class="logo" href="index.html"><img class="site-logo" src="assets/images/nyumbalink-logo-horizontal.svg" alt="NyumbaLink"></a>
+  <h1>Welcome back</h1>
+  <form class="form-card" id="login-form" action="#" method="post">
+   <div class="field"><label for="identifier">Email or phone</label><input id="identifier" name="identifier" type="text" placeholder="you@example.com or 07XX XXX XXX"></div>
+   <div class="field"><label for="password">Password</label><input id="password" name="password" type="password" placeholder="Your password"></div>
+   <div class="form-links"><label class="checkbox-inline"><input type="checkbox" name="remember"> Remember me</label><a href="#">Forgot password?</a></div>
+   <button class="btn btn-primary" type="submit">Sign in</button>
+  </form>
+  <p class="auth-switch">Don't have an account? <a href="register.html">Create one</a></p>
+ </section>
+ <aside class="auth-visual"><div id="auth-image-placeholder">AUTH IMAGE PLACEHOLDER</div></aside>
+</main>
+<script defer src="js/properties.js"></script>
+<script defer src="js/auth.js"></script>
+</body>
+</html>

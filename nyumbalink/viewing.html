@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Request a free viewing — NyumbaLink</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+ <a class="logo" href="index.html"><img class="site-logo" src="assets/images/nyumbalink-logo-horizontal.svg" alt="NyumbaLink"></a>
+ <nav class="main-nav" aria-label="Main navigation">
+  <ul><li><a href="search.html">Find a place</a></li><li><a href="list-property.html">List your property</a></li><li><a href="how-it-works.html">How it works</a></li><li><a href="saved.html">Saved</a></li><li><a href="login.html">Sign in</a></li></ul>
+  <a class="btn btn-primary nav-cta" href="list-property.html">List your property</a>
+ </nav>
+</header>
+<main class="form-page">
+ <h1>Request a free viewing</h1>
+ <article class="property-summary" id="property-summary">
+  <div class="image-placeholder property-image">PROPERTY IMAGE</div>
+  <div><h2>Tudor Student Residences</h2><p class="property-location">Tudor, Mombasa</p><p class="property-price">KSh 5,000<span>/month</span></p></div>
+ </article>
+ <form class="form-card" id="viewing-form" action="#" method="post">
+   <div class="field"><label for="full-name">Full name</label><input id="full-name" name="full-name" type="text" placeholder="Your full name"></div>
+  <div class="form-row">   <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" placeholder="07XX XXX XXX"></div>   <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com"></div></div>
+  <div class="form-row">   <div class="field"><label for="view-date">Preferred viewing date</label><input id="view-date" name="view-date" type="date" placeholder=""></div>   <div class="field"><label for="view-time">Preferred viewing time</label><input id="view-time" name="view-time" type="time" placeholder=""></div></div>
+   <div class="field"><label for="attendees">Number of people attending</label><input id="attendees" name="attendees" type="number" placeholder="1"></div>
+  <div class="field"><label for="message">Message to landlord</label><textarea id="message" rows="4" placeholder="Anything the landlord should know?"></textarea></div>
+  <p class="notice">Viewing requests are free. Do not send money to anyone before physically inspecting the property and confirming the agreed terms.</p>
+  <button class="btn btn-primary" type="submit">Request viewing</button>
+ </form>
+</main>
+<footer class="site-footer">
+ <div class="footer-grid">
+  <section><h2>NyumbaLink</h2><p>Find your place. Skip the hassle.</p></section>
+  <nav aria-label="Explore"><h3>Explore</h3><ul><li><a href="search.html">Find a place</a></li><li><a href="saved.html">Saved properties</a></li><li><a href="how-it-works.html">How it works</a></li></ul></nav>
+  <nav aria-label="Landlords"><h3>Landlords</h3><ul><li><a href="list-property.html">List your property</a></li><li><a href="landlord/dashboard.html">Landlord dashboard</a></li><li><a href="landlord/verification.html">Verification</a></li></ul></nav>
+  <nav aria-label="Company"><h3>Company</h3><ul><li><a href="#">About</a></li><li><a href="#">Contact</a></li><li><a href="#">Help</a></li></ul></nav>
+  <nav aria-label="Legal"><h3>Legal</h3><ul><li><a href="#">Terms</a></li><li><a href="#">Privacy</a></li><li><a href="#">Safety</a></li></ul></nav>
+ </div>
+ <p class="footer-bottom">© 2026 NyumbaLink. All rights reserved.</p>
+</footer>
+<nav class="mobile-nav" aria-label="Mobile navigation"><a href="index.html">Home</a><a href="search.html">Search</a><a href="saved.html">Saved</a><a href="login.html">Account</a></nav>
+<script defer src="js/properties.js"></script>
+<script defer src="js/viewing.js"></script>
+</body>
+</html>
